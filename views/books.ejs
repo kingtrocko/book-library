@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Books</title>
+</head>
+<body>
+<a href="/">Return to Home</a>
+	<br />
+	<br />
+<table>
+	<thead>
+		<td style="padding:0 15px 0 15px;"><b>ID</b></td>
+		<td><b>Name</b></td>
+		<td><b>Author</b></td>
+	</thead>
+	<% for(var i=0; i< books.length; i++){ %>
+		<tr>
+			<td style="padding:0 15px 0 15px;"><%= books[i].ID %></td>
+			<td style="padding:0 15px 0 15px;"><%= books[i].name %></td>
+			<td style="padding:0 15px 0 15px;"><%= books[i].author %></td>
+		</tr>
+	<% } %>
+</table>
+</body>
+</html>
